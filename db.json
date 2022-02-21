@@ -1,0 +1,22 @@
+{
+    "notes": [
+        {
+          "id": "1",
+          "text": "text-1",
+          "day": "time-1",
+          "reminder": true
+        },
+        {
+          "id": "2",
+          "text": "text-2",
+          "day": "time-2",
+          "reminder": true
+        },
+        {
+          "id": "3",
+          "text": "text-3",
+          "day": "time-3",
+          "reminder": false
+        }
+      ]
+}
