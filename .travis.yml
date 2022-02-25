@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - “16.13.2”
+
+# deploy:
+#   provider: firebase
+
+branches:
+  only:
+    - master
+
+# before_install: 
+#   - cd vue-crash-2021
+
+before_script:
+  - npm install -g firebase-tools
+  # - npm install -g @vue/cli
+
+script:
+  - rpm run build
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
