@@ -5,7 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>GoodGovDraft</title>
+
+    <!-- tableau Embed -->
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+    <script type="text/javascript">
+      function initViz() {
+          var containerDiv = document.getElementById("vizContainer"),
+              url = "https://public.tableau.com/views/Covid19DashboardPhilippines/Dashboard?:embed=y&:display_count=y&:origin=viz_share_link",
+              options = {
+                  hideTabs: true,
+                  onFirstInteractive: function () {
+                      console.log("Run this code when the viz has finished loading.");
+                  }
+              };
+
+          var viz = new tableau.Viz(containerDiv, url, options);
+          // Create a viz object and embed it in the container div.
+      }
+    </script>
+    <!-- Tableau Embed -->
   </head>
   <body>
     <noscript>

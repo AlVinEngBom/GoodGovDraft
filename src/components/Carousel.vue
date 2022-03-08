@@ -23,7 +23,7 @@
       <div class="carousel-item">
         <img src="../assets/chonk_3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Chonk's 3 and 4</h5>
+          <h5>Chonks 3 and 4</h5>
           <p>Here's some wholesome chonks</p>
         </div>
       </div>

@@ -1,3 +1,5 @@
 <template>
-    <h1>You are at the About page</h1>
+    <div style="padding-top:50px; text-align:center;">
+        <h1>You are in the About page</h1>
+    </div>
 </template>
