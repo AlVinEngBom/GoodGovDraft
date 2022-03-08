@@ -1,6 +1,6 @@
 <template>
   <body onload="initViz();">
-    <div id="vizContainer"></div>
+    <div id="vizContainer" style="display: flex; justify-content: center;"></div>
   </body>
 </template>
 
