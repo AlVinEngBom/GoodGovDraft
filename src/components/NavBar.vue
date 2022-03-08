@@ -7,17 +7,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <li class="nav-item" style="padding-right:5px;">
+            <button type="button" @click="goToHome()" class="btn btn-light">
+                <a class="nav-link active" aria-current="page">Home</a>
+            </button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Candidates">Candidates</a>
+        <li class="nav-item" style="padding-right:5px;">
+            <button type="button" @click="goToCandidates()" class="btn btn-light">
+                <a class="nav-link">Candidates</a>
+            </button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Conventions">Conventions</a>
+        <li class="nav-item" style="padding-right:5px;">
+            <button type="button" @click="goToConventions()" class="btn btn-light">
+                <a class="nav-link">Conventions</a>
+            </button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About">About</a>
+        <li class="nav-item" style="padding-right:5px;">
+            <button type="button" @click="goToAbout()" class="btn btn-light">
+                <a class="nav-link">About</a>
+            </button>
         </li>
       </ul>
     </div>
@@ -28,5 +36,19 @@
 <script>
 export default {
   name: 'NavBar',
+  methods: {
+    goToHome() {
+      this.$router.push('/');
+    },
+    goToAbout() {
+      this.$router.push('/About');
+    },
+    goToCandidates() {
+      this.$router.push('/Candidates');
+    },
+    goToConventions() {
+      this.$router.push('/Conventions');
+    },
+  }
 }
 </script>
