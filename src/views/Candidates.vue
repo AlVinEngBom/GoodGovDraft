@@ -1,3 +1,3 @@
 <template>
-    <h1>Candidates</h1>
+    <h1>You are at the Candidates page</h1>
 </template>
