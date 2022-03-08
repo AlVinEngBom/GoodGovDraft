@@ -7,22 +7,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item" style="padding-right:5px;">
+        <li class="nav-item pe-1">
             <button type="button" @click="goToHome()" class="btn btn-light">
                 <a class="nav-link active" aria-current="page">Home</a>
             </button>
         </li>
-        <li class="nav-item" style="padding-right:5px;">
+        <li class="nav-item pe-1">
             <button type="button" @click="goToCandidates()" class="btn btn-light">
                 <a class="nav-link">Candidates</a>
             </button>
         </li>
-        <li class="nav-item" style="padding-right:5px;">
+        <li class="nav-item pe-1">
             <button type="button" @click="goToConventions()" class="btn btn-light">
                 <a class="nav-link">Conventions</a>
             </button>
         </li>
-        <li class="nav-item" style="padding-right:5px;">
+        <li class="nav-item pe-1">
             <button type="button" @click="goToAbout()" class="btn btn-light">
                 <a class="nav-link">About</a>
             </button>
